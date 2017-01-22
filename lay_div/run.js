@@ -1,11 +1,15 @@
+// var xxxb = 'this-xxx';
+// alert(xxxb + '  ' + /*typeof*/  $.fn.jquery );
+// console.log('[%s]-->[%s]', xxxb, typeof chrome.tb);
 (function () {
+    // return;
     var dom_layers = top.document.body.querySelectorAll('.a_dom_layer');
     if (dom_layers.length > 0) {
         top.document.body.removeChild(dom_layers[0]);
         return;
     }
     var div_dom = top.document.createElement('div');
-    div_dom.innerHTML = '<textarea style="width:100%;height:100%"></textarea>';
+    div_dom.innerHTML = '<textarea style="width:100%;height:100%">' + /*$.fn.jquery +*/ '</textarea>';
     div_dom.style.position = 'fixed';
     div_dom.style.left = '40%';
     div_dom.style.top = '10px';
@@ -36,4 +40,9 @@
             }
         }
     }
+
+    // var jq = top.document.createElement('script');
+    // jq.src = 'http://localhost/jq.1.10.js';
+    // top.document.body.appendChild(jq);
+
 })();
